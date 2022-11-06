@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(0, 217, 255);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p name="texto">Aqui vai o resultado</p>
+    <p name="texto">Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div class = 'msg'>Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.querySelector('div.msg')
+        window.document.writeln(p1.innerHTML)
+            // Executa na tela o comando
+    </script>
+</body>
+</html>

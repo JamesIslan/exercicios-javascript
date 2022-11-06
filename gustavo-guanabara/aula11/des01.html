@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        body {
+            font: normal 15pt Segoe UI
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de País</h1>
+    Meu país é: <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="enviar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function enviar() {
+            var pais = window.document.querySelector('input#txtvel').value
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Meu país é <strong>${pais}</strong>`
+        }
+    </script>
+</body>
+</html>
